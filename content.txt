@@ -575,3 +575,25 @@ Note:
 - The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
 - Name attribute should be same value for all radio buttons to select any one of them.
 - The <input type="submit"> defines button for submitting the form data to form-handler(function).
+
+
+iframe
+    ======
+
+The iframe in HTML stands for Inline Frame.
+
+ - Use the <iframe> tag to embed another document within the current HTML document.
+ - The HTML iframe "name" attribute is used to specify a reference for an <Iframe> element.
+ - The iframe is basically used to show a webpage inside the current web page. 
+ - The "src" attribute is used to specify the URL of the document that occupies the iframe.
+
+   Attributes
+   ----------
+   src
+   width
+   height
+   name
+   frameBorder
+
+-An iframe can be used as the target frame for a link. The target attribute of the link must refer  to the name attribute of the iframe.
+-Bydefault iframe has border, we can remove border by using css also.
