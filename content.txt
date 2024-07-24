@@ -597,3 +597,38 @@ The iframe in HTML stands for Inline Frame.
 
 -An iframe can be used as the target frame for a link. The target attribute of the link must refer  to the name attribute of the iframe.
 -Bydefault iframe has border, we can remove border by using css also.
+
+
+17) symantic elements (HTML-5)
+    ==========================
+
+Semantic elements = elements with a meaning.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+  <table>       :  Defines table.
+  <form>        :  Defines form.
+
+  <details>     :  Defines additional details that the user can view or hide.
+  <summary>     :  Defines a visible heading for a <details> element.
+
+  <header>      :  Defines a header for a document or section.
+  <nav>         :  Defines navigation links (nav contains <a> tag).
+  <footer>      :  Defines a footer for a document or section.
+
+  <main>        :  Specifies the main content of a document.
+  <section>     :  The <section> element defines a section in a document.
+  <article>     :  Defines an article. Examples of where the <article> element can   be used.(Forum posts, Blog posts, User comments, Product cards, Newspaper articles)
+
+  <aside>	:  Defines content aside from the page content. The <aside> content should be indirectly related to the surrounding main content.
+  
+  <figure>      : Use a <figure> element to mark up a photo in a document, and
+                  element to define a caption for the photo. Specifies self-contained content, like illustrations, diagrams, photos etc.
+                   
+  <figcaption>  :  Defines a caption for a <figure> element.
+
