@@ -32,7 +32,7 @@ Basic tags
 
 <html>: The root element that contains all other HTML elements on the page.
 
-<head>: Contains metadata about the document, such as the title, and linked                         stylesheets or scripts and meta tags.
+<head>: Contains metadata about the document, such as the title, and linked stylesheets or scripts and meta tags.
 
 <title>: Defines the title of the webpage, which appears in the browser's title bar or tab.
 
@@ -632,3 +632,114 @@ Examples of semantic elements: <form>, <table>, and <article> - Clearly defines 
                    
   <figcaption>  :  Defines a caption for a <figure> element.
 
+
+19) Media Elements (HTML-5)
+    ==============
+
+ - HTML5 introduces media elements like <audio> and <video> for displaying and playing audio 
+   and video content.
+ - The <video> tag is used to embed video content in a document, such as some videos. 
+ - The <audio> tag is used to embed sound content in a document, such as some audios.
+   
+   <audio controls autoplay muted loop>
+
+     <source src="">
+   
+   </audio>
+
+   <video width="320" height="240" controls autoplay muted loop>
+
+     <source src=""> 
+     
+   </video>
+
+   Attributes
+   ----------
+   width
+   height
+   controls
+   autoplay
+   muted
+   poster
+   loop
+
+ - The <source> element allows you to specify alternative audio files.
+ - controls: attribute adds audio controls, like play, pause, and volume.
+ - autoplay: it will work with muted for videos.
+ - loop: Specifies that the video will start over again, every time it is finished.
+ - muted: Specifies that the audio output of the video should be muted.
+ - poster: Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+
+ meta tags
+=========
+
+The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+
+<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+
+Metadata will not be displayed on the page, but is machine parsable.
+
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+
+1) <meta charset="UTF-8">: 
+
+   Specifies the character encoding for the document. UTF-8 is widely used for encoding text in various languages.To display an HTML page correctly, a web browser must know which character set to use.The HTML5 specification encourages web developers to use the UTF-8 character set.
+   UTF-8 covers almost all of the characters and symbols in the world!
+
+2) <meta name="description" content="Your page description">: 
+
+    Provides a brief summary or description of the web page's content. Search engines often use this information in search results.
+
+3) <meta name="keywords" content="keyword1, keyword2, keyword3">: 
+
+   Specifies a list of keywords or key phrases related to the page's content. However, this tag is no longer widely used by search engines to determine rankings.
+
+4) <meta name="author" content="Author Name">: 
+
+   Identifies the author of the web page's content.
+
+5) <meta name="viewport" content="width=device-width, initial-scale=1.0">: 
+
+   Sets the initial scale and width of the viewport, important for responsive design.
+   In order to make sure that the content does not appear zoomed in/out, you need to ensure that the initial scale is set to 1.0.
+
+6) <meta http-equiv="refresh" content="20">:
+ 
+   Defines a time interval for the document to refresh itself. 
+
+   21) HTML Graphics
+    =============
+
+SVG and canvas are both technologies that can be creating rich graphics on web browsers, but they are fundamentally different.
+
+SVG
+---
+SVG is a vector-based graphics, and it's useful for defining graphics such as boxes, circles, text, and XML-based image format.
+
+It is a language for describing 2D-graphics and graphical applications in XML. Most Web browsers can display SVG just like they can display PNG, GIF, and JPG.
+
+SVG images are way better than bitmap images.
+
+CANVAS
+------
+Canvas is an HTML5 element, which is used to draw graphics for the dynamic, scriptable rendering of 2D and 3D shapes and bitmap images on the web page.
+
+In Canvas, we need the script to draw the graphics. It provides an empty graphic zone on which specific JavaScript APIs can draw (such as Canvas 2D or WebGL).
+
+SVG is an XML based vector image (composed of shapes) format.	
+CANVAS is Raster based (composed of the pixel) format.
+
+SVG is more flexible as we can expand it's beyond its natural.	
+CANVAS is not flexible.
+
+SVG does not suit for any gaming application.	
+CANVAS is suited for gaming applications.
+
+SVG images can be modified using JavaScript and CSS.	
+CANVAS is can be modified using JavaScript only.
+
+SVG generates only 2D graphics.	
+CANVAS is generating 2D graphics as well as 3D graphics.
+
+SVG doesn't depend on the resolution.	
+CANVAS depend on the resolution.
