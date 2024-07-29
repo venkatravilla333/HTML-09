@@ -1,0 +1,41 @@
+#myid{
+  color: blueviolet;
+}
+
+.parent-div h1{
+  color: brown;
+}
+
+
+[title='hello']{
+  color: green;
+}
+
+
+.myclass:hover, h1::first-letter{
+  color: cadetblue;
+  font-size: 100px;
+}
+
+.myclass{
+  color: yellow;
+}
+
+/* h1::first-letter{
+  color: rgb(107, 107, 112);
+} */
+
+
+h1, p{
+  color: aqua;
+}
+
+
+h1{
+  color: blue;
+}
+
+
+ *{
+  color: red !important;
+} 

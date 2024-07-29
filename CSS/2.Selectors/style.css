@@ -1,0 +1,112 @@
+
+/* element selector  */
+
+/* p{
+  color: red;
+} */
+
+/* id selector  */
+
+/* #myid{
+  color: red;
+} */
+
+/* class selector  */
+
+/* .myclass{
+  color: red;
+} */
+
+/* decendent selector  */
+
+/* #parent-div p{
+color: red;
+} */
+
+/* child selector  */
+
+/* #parent-div > p{
+color: red;
+} */
+
+/* adjecent sibling selector  */
+
+/* #parent-div + p{
+color: red;
+} */
+
+/* general sibling selector  */
+
+/* #parent-div ~ p{
+color: red;
+} */
+
+/* universal selector  */
+
+/* *{
+  color: red;
+} */
+
+/* group selector  */
+
+ /* #myid, .myh3, h2{
+  color: red;
+} */
+
+/* pseudo class selector */
+
+/* #myid:hover{
+ color: red;
+} */
+
+/* pseudo element selector */
+
+/* #myid::first-letter{
+ color: red;
+ font-size: 40px;
+} */
+
+/* #myid::first-line{
+ color: red;
+ font-size: 20px;
+} */
+
+/* #myid::before{
+ content: 'Hi' ;
+ color: red;
+ font-size: 20px;
+} */
+
+/* #myid::after{
+ content: 'Bye' ;
+ color: red;
+ font-size: 20px;
+} */
+
+/* attribute selector*/
+
+/* based on attribute value  */
+
+/* [title='hi']{
+  color: red;
+} */
+
+/* attribute value starts with  */
+
+/* [title^='hi']{
+  color: red;
+} */
+
+/* attribute value ends with  */
+
+/* [title$='bye']{
+  color: red;
+} */
+
+/* attribute value contains with  */
+
+/* [title*='hello']{
+  color: red;
+} */
+
+
