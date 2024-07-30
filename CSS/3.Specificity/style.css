@@ -30,11 +30,9 @@ h1, p{
   color: aqua;
 }
 
-
 h1{
   color: blue;
 }
-
 
  *{
   color: red !important;
