@@ -308,3 +308,185 @@ Controls the spacing between words in a block of text.
 Example: word-spacing: 4px;
 
 These are some of the essential text properties in CSS. By using these properties, you can customize the appearance and layout of text on your web pages, making it an integral part of web design and typography.
+
+6. Background Properties
+   =====================
+
+
+1.background-color:
+  ----------------
+
+<style>
+  .example {
+    background-color: #F0F0F0;
+  }
+</style>
+
+<div class="example">
+  This is a div with a colored background.
+</div>
+
+2.background-image:
+  ----------------
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+  }
+</style>
+
+<div class="example">
+  This is a div with a background image.
+</div>
+
+
+3.background-repeat: ( repeat (default) | repeat-x | repeat-y | no-repeat )
+  -----------------
+
+=> Repeating horizontally and vertically 
+
+.example-repeat {
+    background-image: url('repeating-pattern.png');
+    background-repeat: repeat;
+}
+
+=> Repeating horizontally only 
+
+.example-repeat-x {
+    background-image: url('horizontal-pattern.png');
+    background-repeat: repeat-x;
+}
+
+=> Repeating vertically only 
+
+.example-repeat-y {
+    background-image: url('vertical-pattern.png');
+    background-repeat: repeat-y;
+}
+
+=> No repetition 
+
+.example-no-repeat {
+    background-image: url('single-image.jpg');
+    background-repeat: no-repeat;
+}
+
+ex:
+--
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+  }
+</style>
+
+<div class="example">
+  This is a div with a non-repeating background image.
+</div>
+
+
+4.background-position:   left top | left center | left bottom | right top | right center |
+  ------------------     right bottom | center top | center center | center bottom
+  
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-position: center top;
+  }
+</style>
+
+<div class="example">
+  This is a div with a centered top-aligned background image.
+</div>
+
+
+5.background-size:
+  ---------------
+
+=> Original size (auto) 
+
+.example-auto {
+    background-image: url('large-image.jpg');
+    background-size: auto;
+}
+
+=> Scale to cover the content area 
+
+.example-cover {
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+
+=> Scale to fit within the content area
+
+.example-contain {
+    background-image: url('image.jpg');
+    background-size: contain;
+}
+
+=> Specific size in pixels 
+
+.example-specific-size {
+    background-image: url('image.jpg');
+    background-size: 200px 150px;
+}
+
+=> Relative size with percentages 
+
+.example-percent-size {
+    background-image: url('image.jpg');
+    background-size: 50% 75%;
+}
+
+Ex:
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-size: cover;
+  }
+</style>
+
+<div class="example">
+  This is a div with a background image that covers the entire element.
+</div>
+
+Note:
+----
+
+The 'cover' tells the browser to cover the whole area of an element. 
+The 'contain' tells the browser to show the whole image without loosing image.
+
+
+6.background-attachment: (scroll | fixed)
+  ---------------------
+
+=> Background image scrolls with content (default) 
+
+.example-scroll {
+    background-image: url('scrolling-background.jpg');
+    background-attachment: scroll;
+}
+
+=> Background image remains fixed in place
+
+.example-fixed {
+    background-image: url('fixed-background.jpg');
+    background-attachment: fixed;
+}
+
+Ex:
+--
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-attachment: fixed;
+  }
+</style>
+
+<div class="example">
+  This is a div with a fixed background image.
+</div>

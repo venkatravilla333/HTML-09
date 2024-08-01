@@ -1,0 +1,11 @@
+div{
+  /* background-color: aqua; */
+  height: 500px;
+  width: 600px;
+  /* border: 2px solid black; */
+  background-image: url('./kohli-2.PNG');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-attachment: fixed;
+}
