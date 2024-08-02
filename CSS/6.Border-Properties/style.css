@@ -1,0 +1,23 @@
+div{
+  width: 200px;
+  height: 200px;
+ /* border-width: 2px; */
+ /* border-color: black; */
+ /* border-style: double; */
+ /* border: 2px solid black; */
+ /* border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px; */
+ /* border-radius: 10px; */
+ /* border-image-source: url('./logo-999.png');
+ border-image-slice: 5% ;
+ border-image-repeat: stretch;
+ border-image-width: 6px;
+ border-image-outset: 0px; */
+}
+
+span{
+  /* border: 2px solid black; */
+ 
+}

@@ -1,0 +1,18 @@
+div{
+border: 2px solid black;
+width: 200px;
+height: 200px;
+/* padding-top: 50px;
+padding-right: 50px;
+padding-left: 50px;
+padding-bottom: 50px; */
+padding: -50px;
+
+
+}
+
+span{
+/* border: 2px solid blue; */
+border: 2px solid black;
+padding: 200px;
+}
