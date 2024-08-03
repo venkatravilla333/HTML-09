@@ -723,3 +723,60 @@ span.inline {
 }
 
 In this example, the padding will increase the height of each inline element, but the adjacent inline elements won't be pushed away. They may overlap or wrap to the next line depending on the available width of the containing element. If you want to create space between these inline elements, you would need to use margin or consider changing the display property to make them behave like block-level elements.
+
+9. Width and height properties
+   ===========================
+
+Note: width and height in % => depends on  parent's width and height.
+====
+
+ - width = Width will be always fixed irrespective of screen size.
+
+ - min-width = min-width is fixed for given size and beyong min-width it depends on screen size.
+  
+ - max-width = max-width is fixed for given size and below max-width it depends on screen size.
+
+ - height = Height is fixed it will not be depend on screen size.
+
+ - min-height = min-height is fixed for given size and beyond min-height depends on screen size.
+
+ - max-height = max-height is fixed for given size and below max-height it depends on screen size.
+
+
+Ex:
+
+In CSS, height, min-height, and max-height are properties used to control the height of an element, such as a container or a block-level element. They serve different purposes and have distinct effects:
+
+height:
+------
+
+The height property sets the exact height of an element to a specific value in pixels, ems, rems, percentages, or other length units. This value is often fixed and doesn't change unless you explicitly modify it.
+If the content inside the element exceeds the specified height, it may overflow and be hidden or affect the layout of surrounding elements unless you use additional CSS properties to manage overflow, like overflow: hidden or overflow: scroll.
+
+.element {
+  height: 200px;
+}
+
+min-height:
+----------
+
+The min-height property sets the minimum height that an element should have. It ensures that the element is at least as tall as the specified value, but it can expand beyond that height if needed to accommodate content or other factors.
+If the content within the element is taller than the specified min-height, the element's height will adjust to fit the content.
+
+.element {
+  min-height: 100px;
+}
+
+max-height:
+----------
+
+The max-height property sets the maximum height that an element can have. It restricts the height to not exceed the specified value. If the content or other factors would cause the element to be taller than the max-height, it will be limited to that height, and scrollbars may appear to allow users to access the overflow content.
+
+.element {
+  max-height: 300px;
+}
+
+You can use these properties individually or in combination to control the height of elements in your web page layout. They are particularly useful when dealing with responsive web design, ensuring that elements adapt to various screen sizes and content while maintaining a defined range of height.
+
+
+

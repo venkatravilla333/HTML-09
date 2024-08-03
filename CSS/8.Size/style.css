@@ -1,0 +1,17 @@
+body{
+  /* border: 2px solid red; */
+  /* height: 200px; */
+}
+
+div{
+  border: 2px solid black;
+  /* width: 50%; */
+  /* width: 200px; */
+  /* min-width: 500px; */
+  /* max-width: 500px; */
+  /* height: 25%; */
+  /* height: 300px; */
+  /* min-height: 20px; */
+  /* min-height: 500px; */
+  /* max-height: 500px; */
+}
