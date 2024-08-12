@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+#container-div{
+  width: 100%;
+  min-height: 100px;
+  /* background-color: #dc3535; */
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#nav-div{
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 12px;
+  
+}
+
+#logo-div{
+  flex-basis: 50%;
+  background-color: rgb(190, 195, 195);
+  
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+#navigation-div{
+  flex-basis: 50%;
+    background-color: rgb(190, 195, 195);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-div{
+  display: flex;
+    background-color: rgb(190, 195, 195);
+  min-height: 90px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#text-div{
+    background-color: rgb(190, 195, 195);
+    min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#main-div{
+  /* background-color: chocolate; */
+  min-height: 300px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  display: flex;
+  background-color: rgb(190, 195, 195);
+  flex-basis: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-div{
+  background-color: rgb(190, 195, 195);
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
