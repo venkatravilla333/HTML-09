@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#container-div{
+  /* background-color: aqua; */
+  min-height: 100px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+#logo-div{
+  background-color: rgb(214, 211, 211);
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+#main-div{
+  /* background-color: rgb(235, 231, 5); */
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+#left-div{
+  /* background-color: rgb(25, 11, 211); */
+  flex-basis: 32%;
+  padding-top: 30px;
+}
+#right-div{
+  /* background-color: rgb(11, 144, 211); */
+  flex-basis: 66%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+#header-div{
+  background-color: rgb(214, 211, 211);
+  min-height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#body-div{
+  background-color: rgb(214, 211, 211);
+  min-height: 72%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-div{
+  background-color: rgb(214, 211, 211);
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
