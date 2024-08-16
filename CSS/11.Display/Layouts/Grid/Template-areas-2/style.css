@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+#container{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 100px 80px 200px 30px;
+  grid-template-areas: 
+  "logo nav nav"
+  "header header header"
+  "intro intro intro"
+  "box1 box2 box3"
+  "footer footer footer"
+  ;
+  grid-row-gap: 6px;
+}
+#logo{
+  background-color: aqua;
+  grid-area: logo;
+  display: grid;
+  align-items: center;
+}
+#nav{
+  background-color: rgb(255, 247, 0);
+  grid-area: nav;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#header{
+  background-color: rgb(17, 0, 255);
+  grid-area: header;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#intro{
+  background-color: rgb(255, 111, 0);
+  grid-area: intro;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#box-1{
+  background-color: rgb(255, 0, 242);
+  grid-area: box1;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+  }
+  #box-2{
+    background-color: rgb(255, 0, 242);
+    grid-area: box2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+}
+#box-3{
+  background-color: rgb(255, 0, 242);
+  grid-area: box3;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+  background-color: rgb(204, 255, 0);
+  grid-area: footer;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
