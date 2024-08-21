@@ -1076,3 +1076,98 @@ Here's an example of how to use the box-sizing property:
 In this case, the specified width and height values will include the padding and border, making it easier to control the overall dimensions of the element while ensuring that the content area remains a consistent size.
 
 In summary, the CSS box-model defines the standard model for calculating element dimensions, and the box-sizing property allows you to change how width and height are interpreted, either as content dimensions or including padding and border.
+
+ 
+15. Responsive Design
+    =================
+
+Media queries
+-------------
+
+-Media queries are essential for creating responsive web designs that adapt to various devices   and screen sizes, providing a better user experience.
+
+-Media query is a technic of applying different styles to an element based on certain condition.
+ 
+-They are commonly used to provide different styles for different devices by their features like type, width, height, orientaion.
+
+Syntax:
+
+1)@media
+  ------
+ 
+Media queries use the @media rule and have a specific syntax. 
+
+
+@media screen and (max-width: 600px) {
+
+  /* CSS rules for screens with a width of 600px or less */
+}
+
+In this example, the media query targets screens with a width of 600 pixels or less.
+
+2) Media Types:
+   ----------- 
+
+You can specify different media types (screen, print, speech) to apply styles in different contexts. The most commonly used media type is screen.
+
+-screen
+-print
+-speech
+
+3) Media Features:
+   --------------
+ 
+Media features like max-width, min-width, min-height, max-height, orientation,and many others are used to specify the conditions under which the CSS rules should be applied.
+
+-min-width
+-max-width
+-min-height
+-max-height
+-orientation (landscape, portrait)
+
+Here are some common examples of media queries:
+
+Max-width: 
+---------
+
+To apply styles when the viewport width is at most a certain size.
+
+@media screen and (max-width: 768px) {
+
+  /* CSS rules for screens with a width of 768px or less */
+}
+
+Min-width: 
+---------
+
+To apply styles when the viewport width is at least a certain size.
+
+
+@media screen and (min-width: 1024px) {
+
+  /* CSS rules for screens with a width of 1024px or more */
+}
+
+Orientation: 
+-----------
+
+To apply styles based on the device's orientation (portrait or landscape).
+
+
+@media screen and (orientation: landscape) {
+
+  /* CSS rules for landscape orientation */
+}
+
+4) Operators (Combining Conditions) 
+   --------------------------------
+
+You can combine multiple conditions using and, or, not, only to create more complex media queries.
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS rules for screens between 768px and 1024px wide */
+}
+
+Media queries are essential for creating responsive web designs that adapt to various devices and screen sizes, providing a better user experience.

@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* desktop */
+@media screen and (min-width: 900px){
+  
+
+#container{
+  min-width: 900px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+} 
+
+#holy{
+  width: 100%;
+  min-height: 120px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+#main{
+  width: 100%;
+  min-height: 330px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#nav{
+  flex-basis: 25%;
+  background-color: rgb(255, 0, 255);
+}
+
+#content{
+  flex-basis: 48%;
+  background-color: rgb(227, 116, 116);
+}
+
+#side{
+  flex-basis: 25%;
+  background-color: blue;
+}
+#footer{
+  width: 100%;
+  min-height: 120px;
+  background-color: rgb(34, 255, 0);
+}
+}
+
+/* tab  */
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  #container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+  }
+
+  #holy {
+    width: 100%;
+    min-height: 90px;
+    background-color: blue;
+    margin-bottom: 10px;
+  }
+
+  #main {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+     flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;  }
+
+  #nav {
+    width: 100%;
+    background-color: rgb(255, 0, 255);
+    min-height: 105px;
+  }
+
+  #content {
+    width: 100%;
+    background-color: rgb(116, 207, 227);
+    min-height: 170px;
+  }
+
+  #side {
+    width: 100%;
+    min-height: 105px;
+    background-color: blue;
+  }
+
+  #footer {
+    width: 100%;
+    min-height: 90px;
+    background-color: rgb(34, 255, 0);
+  }
+
+}
+
+
+/* mobile  */
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #container {
+    /* background-color: red; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #holy {
+    width: 100%;
+    min-height: 80px;
+    background-color: blue;
+    margin-bottom: 10px;
+  }
+
+  #main {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  #nav {
+    width: 100%;
+    background-color: rgb(255, 0, 255);
+    min-height: 90px;
+  }
+
+  #content {
+    width: 100%;
+    background-color: rgb(54, 227, 48);
+    min-height: 207px;
+  }
+
+  #side {
+    width: 100%;
+    min-height: 90px;
+    background-color: blue;
+  }
+
+  #footer {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(34, 255, 0);
+  }
+
+}
+ 
