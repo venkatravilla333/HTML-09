@@ -1171,3 +1171,124 @@ You can combine multiple conditions using and, or, not, only to create more comp
 }
 
 Media queries are essential for creating responsive web designs that adapt to various devices and screen sizes, providing a better user experience.
+
+17. CSS units
+    =========
+
+CSS uses various units of measurement to define the size, position, and spacing and border of 
+elements on a web page. These units allow web developers to create responsive.
+
+Here are some common CSS units:
+
+1)Absolute Units
+  --------------
+
+  These are the units whose length will not be changed across any device.
+  These will not be depended on any element/property.
+
+  ex: px
+
+
+These units are absolute and not recommended for web design because they do not scale well with different devices and screen sizes.
+
+Pixels (px):
+-----------
+
+Pixels are the most common unit and represent the smallest unit of measurement on a screen.
+They are fixed units, meaning they do not change depend upon anything.
+
+element {
+  width: 100px;
+  font-size: 16px;
+}
+
+
+element {
+  width: 2in; /* 2 inches */
+  margin: 1cm; /* 1 centimeter */
+}
+
+
+Choose the CSS unit that best suits your design and layout needs, keeping in mind that relative units (like em, rem, and percentages) are often preferred for responsive web design.
+
+
+
+2)Relative Units
+  --------------
+
+  These will be depended on any element/property.
+  These are the units whose length will be changed across devices.
+
+  ex: %, vw, vh, em, rem (use if you want to develop responsive website).
+
+
+px => Not related to anything.
+
+% => Related to parent element. 
+
+vw/vh => Related to screen size.
+
+rem => Related to root element font size (html).
+
+em => Related to its own font size. (font-size : raleted to parent element font-size)
+
+
+Percentage (%):
+--------------
+
+Percentages are relative units that refer to a percentage of the parent element's property (e.g., width, height). It depends upon parent length.
+
+Commonly used for creating responsive layouts.
+
+element {
+  width: 50%; /* 50% of the parent element's width */
+  padding: 10% 5%; /* 10% top and bottom, 5% left and right */
+}
+
+
+Viewport-Percentage Units (vw, vh):
+----------------------------------
+
+vw: Visible width area on the screen.
+
+vh: Visible height area on the screen.
+
+=> vh and vw depends upon screen size.
+
+These units are relative to the viewport size (the visible area of the browser window).
+
+Useful for creating responsive designs that adapt to the screen size.
+
+element {
+  width: 50vw; /* 50% of the viewport width */
+  height: 25vh; /* 25% of the viewport height */
+}
+
+
+
+Em (em):
+-------
+
+The em unit is relative to the font size of the nearest parent element with a defined font size.
+
+It is useful for creating scalable and responsive designs.
+
+element {
+  font-size: 1.5em; /* 1.5 times the font size of the parent element */
+  margin: 0.5em; /* Half the font size of the current element */
+}
+
+-font-size depends upon parent element font-size.
+-other than font-size properties depends on fontsize of current element.
+
+Rem (rem):
+---------
+
+Similar to em, but it is relative to the font size of the root element (usually the <html> element).
+
+Useful for maintaining a consistent sizing scale across the entire page.
+
+element {
+  font-size: 1.5rem; /* 1.5 times the root font size */
+  margin: 1rem; /* Equal to the root font size */
+}

@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+}
+
+/* pixel */
+
+/* #parentpx{
+  border: 2px solid black;
+  width: 800px;
+  height: 200px;
+}
+#childpx{
+  border: 2px solid red;
+  width: 900px;
+  height: 300px;
+} */
+
+/* %  */
+
+/* #parentper{
+  border: 2px solid black;
+  width: 50%;
+  height: 200px;
+}
+#childper{
+  border: 2px solid red;
+  width: 50%;
+  height: 100%;
+}
+
+body{
+  border: 2px solid blue;
+  width: 90%;
+}
+
+html{
+  border: 2px solid green;
+} */
+
+
+/* vw & vh 
+
+ #parentvp{
+  border: 2px solid black;
+  width: 75vw;
+  height: 50vh;
+}
+#childvp{
+  border: 2px solid red;
+  width: 100vw;
+  height: 50vh;
+}
+
+ */
+
+ /* em */
+
+ /* #parentem{
+ font-size: 100px;
+}
+#childem{
+ font-size: 2em;
+ border: 2px solid black;
+ width: 10em;
+} */
+
+/* em */
+
+#parentrem{
+}
+#childrem{
+ /* font-size: 4rem; */
+ border: 2px solid black;
+ width: 4rem;
+ height: 2rem;
+ 
+} 
+
+html{
+  font-size: 200px;
+}
+
+ 
+
